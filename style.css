@@ -116,6 +116,10 @@ input:focus-visible {
     outline: 1px solid  hwb(259 30% 0%);
 }
 
+
+.attribution { font-size: 11px; text-align: center; margin-top: 10px;  }
+.attribution a { color: hsl(228, 45%, 44%); }
+
 @media screen and (min-width:650px) {
     .button{
         justify-content: end;
