@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+		<link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+		<link rel="stylesheet" href="style.css">
+		
+		<title>Frontend Mentor | Age calculator app</title>
+
+		<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+		<style>
+			.attribution { font-size: 11px; text-align: center; margin-top: 10px;  }
+			.attribution a { color: hsl(228, 45%, 44%); }
+		</style>
+
+	</head>
+	<body>
+		<div class="container">
+			<div class="input">
+				<form>
+
+					<div class="part">
+						<label for="day" id="labelDay">Day</label>
+						<input type="text" onkeypress="return /[0-9]/i.test(event.key)" id="day" placeholder="DD">
+						<p class="error" id="errorday"></p>
+					</div>
+					<div class="part">
+						<label for="month">Month</label>
+						<input type="text "onkeypress="return /[0-9]/i.test(event.key)" id="month" placeholder="MM" title="Only">
+						<p class="error" id="errormonth"></p>
+					</div>
+					<div class="part">
+						<label for="year">Year</label>
+						<input type="text" onkeypress="return /[0-9]/i.test(event.key)" id="year" placeholder="YYYY">
+						<p class="error" id="erroryear"></p>
+					</div>
+					
+					<p id="error"></p>
+
+					<div class="button">
+						<div class="line"></div>
+						<button type="button">
+							<svg xmlns="http://www.w3.org/2000/svg" width="46" height="44" viewBox="0 0 46 44"><g fill="none" stroke="#FFF" stroke-width="2"><path d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"/></g></svg>
+						</button>
+					</div>
+				</form>
+			</div>
+			<div class="output">
+				<div class="row1">
+					<h1 class="purpul" id="years">--</h1>
+					<h1>years</h1>
+				</div>
+				<div class="row2">
+					<h1 class="purpul" id="months">--</h1>
+					<h1>months</h1>
+				</div>
+				<div id="row3">
+					<h1 class="purpul" id="days">--</h1>
+					<h1>days</h1>
+				</div>
+				
+			</div>
+
+		</div>
+		<div class="attribution">
+			Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+			Coded by <a href="#">Rei Hajderaj</a>.
+		</div>
+		
+
+		<script src="script.js"></script>
+	</body>
+</html>
