@@ -52,6 +52,7 @@ form {
     margin-top: 30px;
     width: 20%;
     max-width: 130px;
+    min-width: 30px;
     flex-grow: 1;
     border-color: white;
     color: hsl(0, 1%, 44%);
